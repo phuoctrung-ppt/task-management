@@ -1,4 +1,4 @@
-import { css } from 'styled-components'
+import { css } from 'styled-components';
 
 const typography = {
   family: {
@@ -32,6 +32,6 @@ const typography = {
       font-weight: 600;
     `,
   },
-}
+};
 
-export default typography
+export default typography;
