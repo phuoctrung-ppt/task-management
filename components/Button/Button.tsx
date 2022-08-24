@@ -56,6 +56,9 @@ const ButtonStyled = styled.button<ButtonProps>`
   border: 0;
   border-radius: 2rem;
   align-items: center;
+  :hover {
+    cursor: pointer;
+  }
   ${({ variant, disabled }) => {
     if (disabled) {
       return `
@@ -69,7 +72,7 @@ const ButtonStyled = styled.button<ButtonProps>`
       text: ${text};
       :hover{
         background: ${hover};
-        cusor: pointer;
+        cursor: pointer;
       }
     `;
   }}
