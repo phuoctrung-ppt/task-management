@@ -15,7 +15,14 @@ const Template: ComponentStory<any> = () => {
       {Object.entries(Icons).map(([iconName, Icon]) => {
         return (
           <>
-            <Grid.Item key={iconName} span={3}>
+            <Grid.Item
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+              }}
+              key={iconName}
+              span={4}
+            >
               <Icon color={colors.gray1} />
               {iconName}
             </Grid.Item>

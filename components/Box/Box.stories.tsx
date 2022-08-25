@@ -7,7 +7,7 @@ export default {
   component: Box,
 } as ComponentMeta<typeof Box>;
 const Template: ComponentStory<typeof Box> = () => (
-  <Box>
+  <Box style={{ fontSize: '25px' }}>
     <h1>Title</h1>
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel ad perferendis asperiores qui

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 import { color } from '../../utils';
 const StyledBox = styled.div`
@@ -8,10 +10,10 @@ const StyledBox = styled.div`
   overflow-wrap: anywhere;
 `;
 
-type BoxType = {
+interface IBox {
   children?: React.ReactNode;
-};
+}
 
-export const Box = (props: JSX.IntrinsicAttributes & BoxType) => {
+export const Box = (props: HTMLAttributes<unknown> & IBox) => {
   return <StyledBox {...props} />;
 };
