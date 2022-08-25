@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import * as Icons from '.';
-import colors from '../../utils/color';
+import { color } from '../../utils';
 import { Grid } from '../Grid';
 export default {
   title: 'Example/Icon',
@@ -23,7 +23,7 @@ const Template: ComponentStory<any> = () => {
               key={iconName}
               span={4}
             >
-              <Icon color={colors.gray1} />
+              <Icon color={color.gray1} />
               {iconName}
             </Grid.Item>
           </>
