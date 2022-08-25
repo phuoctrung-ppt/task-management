@@ -8,10 +8,10 @@ const StyledBox = styled.div`
   overflow-wrap: anywhere;
 `;
 
-interface IBox {
+type BoxType = {
   children?: React.ReactNode;
-}
+};
 
-export const Box = (props: IBox) => {
+export const Box = (props: JSX.IntrinsicAttributes & BoxType) => {
   return <StyledBox {...props} />;
 };
